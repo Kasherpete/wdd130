@@ -1,0 +1,40 @@
+img {
+    width: 10%;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+    margin: 0px;
+}
+
+main {
+    background-color: lightgrey;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/* naviagtion */
+
+header, footer {
+    background-color: darkgray;
+    padding: 10px;
+}
+
+header {
+    padding: 35px;
+}
+
+nav a {
+    color: black;
+    background: gray;
+    padding: 20px;
+    font-size: 1.3em;
+    border-radius: 100px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+nav a:hover {
+    background-color: white;
+}
