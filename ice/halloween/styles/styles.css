@@ -1,0 +1,80 @@
+/* Add your CSS here to style your halloween page */
+
+@font-face {
+    font-family: "Bloody Ghost";
+    src: url("/ice/halloween/fonts/bloody_ghost/bloody_ghost.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sancreek";
+    src: url("/ice/halloween/fonts/Sancreek-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Creepster";
+    src: url("/ice/halloween/fonts/Creepster-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #110504;
+    color: white;
+    font-family: "Creepster", sans-serif;
+    font-size: 20px;
+}
+
+
+h2 {
+    font-family: "Sancreek";
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header {
+    background-color: #3a0c84;
+    /* background-color: #FA7602; */
+    padding: 20px
+}
+
+footer {
+    background-color: #3a0c84;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Bloody Ghost";
+    font-size: 50px;
+}
+
+img {
+    border: 10px orange solid;
+}
+
+a {
+    background-color: #240555;
+    padding: 7px;
+    border-radius: 7px;
+    transition: 200ms;
+}
+
+a:hover {
+    background-color: orange;
+}
