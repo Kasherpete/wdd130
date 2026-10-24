@@ -6,13 +6,43 @@
 
 
 body {
-    background-color: rgb(153, 185, 204);
+    /* background-color: rgb(153, 185, 204); */
+    background-color: #151b19;
+    color: #e6ece8;
     margin: 0px;
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.07rem;
+    line-height: 1.7;
+    /* font: 1.0625rem/1.7 Georgia, "Iowan Old Style", "Times New Roman", serif; */
 }
 
-main {
+hr {
+    color: #7fd1a8;
+}
+
+.aboutme-container {
+    padding: 40px;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+a {
+    color: #7fd1a8;
+    text-underline-offset: .15em;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+
+th, td { text-align: left; padding: .6rem .75rem; border-bottom: 1px solid #2e3a36; vertical-align: top; }
+
+th { border-bottom: 2px solid #7fd1a8; }
+
+
+.home-container {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
 
@@ -22,7 +52,8 @@ main {
 /* naviagtion */
 
 header, footer {
-    background-color: rgb(0, 103, 163);
+    /* background-color: rgb(0, 103, 163); */
+    background-color: #2e3a36;
     padding: 10px;
 }
 
@@ -32,7 +63,8 @@ header {
 
 nav a {
     color: white;
-    background: rgb(0, 74, 117);
+    /* background: rgb(0, 74, 117); */
+    background-color: #465b52;
     padding: 10px;
     font-size: 1.3em;
     border-radius: 10px;
@@ -40,7 +72,9 @@ nav a {
     margin-left: 10px;
     transition: 200ms;
     text-decoration: none;
-    border: rgb(0, 47, 73) solid 3px
+    border: rgb(0, 47, 73) solid 3px;
+    font-family: "Inter";
+    line-height: 1;
 }
 
 nav a:hover {
@@ -53,7 +87,7 @@ nav {
     
 }
 
-main div {
+.home-container div {
     padding: 30px
 }
 
@@ -63,7 +97,8 @@ main div {
     transition: 250ms;
     text-decoration: none;
     color: black;
-    background-color: rgb(94, 139, 166);
+    /* background-color: rgb(94, 139, 166); */
+    background-color: #50886c;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -87,6 +122,46 @@ main div {
     
 }
 
-h2 {
-    font-size: 2em;
+h1, h2, h3, h4, h5, h6, th, label, button, input, textarea {
+    font-family: system-ui, -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+h1 { font-size: 2.6rem;  margin: 0 0 .5rem; line-height: 1.1; }
+h2 { font-size: 1.6rem; margin: 2rem 0 .75rem; }
+h3 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+h4 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; color: #7fd1a8; }
+h5 { font-size: .95rem; margin: 1.25rem 0 .25rem; }
+h6 { font-size: .85rem; margin: 1.25rem 0 .25rem; color: #9fb0a8; }
+
+.lead {
+    color: #9fb0a8;
+    font-size: 1.25rem;
+}
+
+form { display: grid; gap: 1rem; }
+label { display: grid; gap: .3rem; font-weight: 600; font-size: .95rem; }
+input, textarea {
+    font-size: 1rem;
+    padding: .6rem .75rem;
+    background: #1d2623;
+    color: #e6ece8;
+    border: 1px solid #2e3a36;
+    border-radius: 4px;
+}
+button {
+    justify-self: start;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .65rem 1.25rem;
+    background: #7fd1a8;
+    color: #151b19;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: 3px solid #7fd1a8;
+    outline-offset: 2px;
 }
