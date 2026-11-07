@@ -165,3 +165,44 @@ input:focus-visible, textarea:focus-visible {
     outline: 3px solid #7fd1a8;
     outline-offset: 2px;
 }
+
+
+.ice-page-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* I had ChatGPT give me this recommendation */
+    padding: 50px;
+    gap: 50px;
+}
+
+.ice-container {
+    display: block;
+    transition: 250ms;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: #50886c;
+    padding: 10px;
+    border-radius: 15px;
+    /* width: 300px; */
+    width: 100%;
+    
+
+}
+
+.ice-container h3 {
+    margin-top: 0px;
+}
+
+.ice-container img {
+    width: 80%;
+}
+
+/* .ice-container p {
+    
+} */
+
+.ice-container:hover {
+    color: rgb(0, 87, 138);
+    transform:  scale(1.05);
+    
+}
